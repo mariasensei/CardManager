@@ -1,0 +1,25 @@
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\bin\Release\CardManager.exe
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\bin\Release\CardManager.pdb
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\CardManager.AddCard.resources
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\CardManager.Main.resources
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\CardManager.Properties.Resources.resources
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\CardManager.exe
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\CardManager.pdb
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Release\CardManager.AddCardError.resources
+D:\CardManager\CardManager\obj\x86\Release\ResolveAssemblyReference.cache
+D:\CardManager\CardManager\obj\x86\Release\CardManager.AddCard.resources
+D:\CardManager\CardManager\obj\x86\Release\CardManager.AddCardError.resources
+D:\CardManager\CardManager\obj\x86\Release\CardManager.ConfirmDelete.resources
+D:\CardManager\CardManager\obj\x86\Release\CardManager.DeleteCard.resources
+D:\CardManager\CardManager\obj\x86\Release\CardManager.DeleteCardError.resources
+D:\CardManager\CardManager\obj\x86\Release\CardManager.Main.resources
+D:\CardManager\CardManager\obj\x86\Release\CardManager.Properties.Resources.resources
+D:\CardManager\CardManager\obj\x86\Release\GenerateResource.read.1.tlog
+D:\CardManager\CardManager\obj\x86\Release\GenerateResource.write.1.tlog
+D:\CardManager\CardManager\obj\x86\Release\CardManager.exe
+D:\CardManager\CardManager\obj\x86\Release\CardManager.pdb
+D:\CardManager\CardManager\bin\Release\CardManager.exe
+D:\CardManager\CardManager\bin\Release\CardManager.pdb

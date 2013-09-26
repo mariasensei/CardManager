@@ -1,0 +1,184 @@
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\bin\Debug\CardManager.exe
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\bin\Debug\CardManager.pdb
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\Maria\documents\visual studio 2010\Projects\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.exe
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.pdb
+D:\CardManager\CardManager\bin\Debug\CardManager.exe
+D:\CardManager\CardManager\bin\Debug\CardManager.pdb
+D:\CardManager\CardManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.Main.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+D:\CardManager\CardManager\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\CardManager\CardManager\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+D:\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.exe
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\bin\Debug\CardManager.exe
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\bin\Debug\CardManager.pdb
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Administrator\My Documents\Dropbox\CardManager\CardManager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\Maria\Dropbox\CardManager\CardManager\bin\Debug\CardManager.exe
+C:\Users\Maria\Dropbox\CardManager\CardManager\bin\Debug\CardManager.pdb
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Maria\Dropbox\CardManager\CardManager\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Maria\SkyDrive\Έγγραφα\CardManager\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Maria\SkyDrive\Έγγραφα\CardManager\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\bin\Debug\CardManager.exe
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\bin\Debug\CardManager.pdb
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.csprojResolveAssemblyReference.cache
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.Collections.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\bin\Debug\CardManagerDB.mdf
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\bin\Debug\CardManagerDB_log.ldf
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+C:\Users\nanao_000\Documents\Card Manager files\CardManager\bin\Debug\CardManager.exe.config
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\bin\Debug\CardManager.exe.config
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.Collections.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\bin\Debug\CardManager.exe
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\bin\Debug\CardManager.pdb
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.SpecifiedCardSet.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\bin\Debug\CardManagerDB.mdf
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\bin\Debug\CardManagerDB_log.ldf
+C:\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManager.exe.config
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.Collections.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.SpecifiedCardSet.resources
+C:\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManagerDB.mdf
+C:\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManagerDB_log.ldf
+C:\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManager.exe
+C:\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManager.pdb
+\\Lappy\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManager.exe.config
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.exe
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.pdb
+\\Lappy\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManagerDB.mdf
+\\Lappy\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManagerDB_log.ldf
+\\Lappy\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManager.exe
+\\Lappy\Users\Public\Documents\20130817\CardManager\bin\Debug\CardManager.pdb
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.csprojResolveAssemblyReference.cache
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.Collections.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.Main.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.SpecifiedCardSet.resources
+\\Lappy\Users\Public\Documents\20130817\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+\\Lappy\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManager.exe.config
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.exe
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.pdb
+\\Lappy\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManagerDB.mdf
+\\Lappy\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManagerDB_log.ldf
+\\Lappy\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManager.exe
+\\Lappy\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManager.pdb
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.csprojResolveAssemblyReference.cache
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.Collections.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.Main.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.SpecifiedCardSet.resources
+\\Lappy\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManager.exe.config
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.csprojResolveAssemblyReference.cache
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.AddNewCollection.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.Collections.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.SpecifiedCardSet.resources
+C:\Users\Public\Documents\20130827\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+C:\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManagerDB.mdf
+C:\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManagerDB_log.ldf
+C:\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManager.exe
+C:\Users\Public\Documents\20130827\CardManager\bin\Debug\CardManager.pdb
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddNewCollection.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.DeleteCollection.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.DeleteCollectionConfirm.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.UpdateCollection.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddCardSet.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.DeleteCardSet.resources
+C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddNewCard.resources
