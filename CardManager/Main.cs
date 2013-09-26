@@ -110,5 +110,13 @@ namespace CardManager
             AddNewCardForm.WindowState = FormWindowState.Maximized;
             AddNewCardForm.Show();
         }
+
+        private void viewUpdateCardsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UpdateCard UpdateCardForm = new UpdateCard();
+            UpdateCardForm.MdiParent = this;
+            UpdateCardForm.WindowState = FormWindowState.Maximized;
+            UpdateCardForm.Show();
+        }
     }
 }

@@ -43,11 +43,11 @@
             this.insertNewSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateViewSetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertNewCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewUpdateCardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,14 +181,6 @@
             this.deleteSetToolStripMenuItem.Text = "Delete Set";
             this.deleteSetToolStripMenuItem.Click += new System.EventHandler(this.deleteSetToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 23);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // cardsToolStripMenuItem
             // 
             this.cardsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -212,12 +204,21 @@
             this.viewUpdateCardsToolStripMenuItem.Name = "viewUpdateCardsToolStripMenuItem";
             this.viewUpdateCardsToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
             this.viewUpdateCardsToolStripMenuItem.Text = "View Update Cards";
+            this.viewUpdateCardsToolStripMenuItem.Click += new System.EventHandler(this.viewUpdateCardsToolStripMenuItem_Click);
             // 
             // deleteCardsToolStripMenuItem
             // 
             this.deleteCardsToolStripMenuItem.Name = "deleteCardsToolStripMenuItem";
             this.deleteCardsToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
             this.deleteCardsToolStripMenuItem.Text = "Delete Cards";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 23);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // Main
             // 

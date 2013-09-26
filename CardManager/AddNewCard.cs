@@ -68,6 +68,21 @@ namespace CardManager
 
                 if (msg == "Fail1")
                     msg = "Please fill all required fields";
+                else if (msg == "Fail2")
+                {
+                    string normal = normalAmountNumeric.Value.ToString();
+                    var msgReply = MessageBox.Show("Card already exists. Add " + normalAmountNumeric.Value.ToString() + " normal and " + follieAmountNumeric.Value.ToString() + " follie?", "Card already in database.", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (msgReply == DialogResult.No)
+                        this.Close();
+                    else
+                        ;
+                        //here you call procedure to add 1 more in the card.
+                }
+                else if (msg == "Fail4")
+                    msg = "Card Number is out of range.";
+                else if (msg == "Fail3")
+                    msg = "CardSet with that name does not exist.";
+
                 msgLabel.Text = msg;
                 msgLabel.Visible = true;
             }

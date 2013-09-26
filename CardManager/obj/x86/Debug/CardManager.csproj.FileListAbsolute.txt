@@ -182,3 +182,31 @@ C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManag
 C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddCardSet.resources
 C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.DeleteCardSet.resources
 C:\Users\Maria\Desktop\Card Manager Programs\CardManager\obj\x86\Debug\CardManager.AddNewCard.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\bin\Debug\CardManager.exe.config
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.exe
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.pdb
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\bin\Debug\CardManagerDB.mdf
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\bin\Debug\CardManagerDB_log.ldf
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\bin\Debug\CardManager.exe
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\bin\Debug\CardManager.pdb
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.csprojResolveAssemblyReference.cache
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.AddCard.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardConfirmed.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardError.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.AddCardSet.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.AddNewCard.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.AddNewCollection.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.CardSets.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.Collections.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.ConfirmDelete.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardSet.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCollection.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCollectionConfirm.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.Main.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.Properties.Resources.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.SpecifiedCardSet.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.UpdateCard.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.UpdateCollection.resources
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
