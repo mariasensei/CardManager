@@ -113,12 +113,6 @@
     <Compile Include="DeleteCard.Designer.cs">
       <DependentUpon>DeleteCard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DeleteCardError.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteCardError.Designer.cs">
-      <DependentUpon>DeleteCardError.cs</DependentUpon>
-    </Compile>
     <Compile Include="DeleteCardSet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,9 +171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteCard.resx">
       <DependentUpon>DeleteCard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteCardError.resx">
-      <DependentUpon>DeleteCardError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteCardSet.resx">
       <DependentUpon>DeleteCardSet.cs</DependentUpon>

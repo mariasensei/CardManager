@@ -40,10 +40,10 @@
             this.deleteSetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertNewCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addOneCopyInExistingCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewUpdateCardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addOneCopyInExistingCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,9 +127,9 @@
             // 
             this.cardsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insertNewCardToolStripMenuItem,
+            this.addOneCopyInExistingCardToolStripMenuItem,
             this.viewUpdateCardsToolStripMenuItem,
-            this.deleteCardsToolStripMenuItem,
-            this.addOneCopyInExistingCardToolStripMenuItem});
+            this.deleteCardsToolStripMenuItem});
             this.cardsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.cardsToolStripMenuItem.Name = "cardsToolStripMenuItem";
             this.cardsToolStripMenuItem.Size = new System.Drawing.Size(59, 23);
@@ -138,22 +138,30 @@
             // insertNewCardToolStripMenuItem
             // 
             this.insertNewCardToolStripMenuItem.Name = "insertNewCardToolStripMenuItem";
-            this.insertNewCardToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
+            this.insertNewCardToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
             this.insertNewCardToolStripMenuItem.Text = "Insert New Card";
             this.insertNewCardToolStripMenuItem.Click += new System.EventHandler(this.insertNewCardToolStripMenuItem_Click);
+            // 
+            // addOneCopyInExistingCardToolStripMenuItem
+            // 
+            this.addOneCopyInExistingCardToolStripMenuItem.Name = "addOneCopyInExistingCardToolStripMenuItem";
+            this.addOneCopyInExistingCardToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
+            this.addOneCopyInExistingCardToolStripMenuItem.Text = "Add A Copy of Existing Card";
+            this.addOneCopyInExistingCardToolStripMenuItem.Click += new System.EventHandler(this.addOneCopyInExistingCardToolStripMenuItem_Click);
             // 
             // viewUpdateCardsToolStripMenuItem
             // 
             this.viewUpdateCardsToolStripMenuItem.Name = "viewUpdateCardsToolStripMenuItem";
-            this.viewUpdateCardsToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
+            this.viewUpdateCardsToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
             this.viewUpdateCardsToolStripMenuItem.Text = "View Update Cards";
             this.viewUpdateCardsToolStripMenuItem.Click += new System.EventHandler(this.viewUpdateCardsToolStripMenuItem_Click);
             // 
             // deleteCardsToolStripMenuItem
             // 
             this.deleteCardsToolStripMenuItem.Name = "deleteCardsToolStripMenuItem";
-            this.deleteCardsToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
+            this.deleteCardsToolStripMenuItem.Size = new System.Drawing.Size(268, 24);
             this.deleteCardsToolStripMenuItem.Text = "Delete Cards";
+            this.deleteCardsToolStripMenuItem.Click += new System.EventHandler(this.deleteCardsToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -162,13 +170,6 @@
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(45, 23);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // addOneCopyInExistingCardToolStripMenuItem
-            // 
-            this.addOneCopyInExistingCardToolStripMenuItem.Name = "addOneCopyInExistingCardToolStripMenuItem";
-            this.addOneCopyInExistingCardToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
-            this.addOneCopyInExistingCardToolStripMenuItem.Text = "Add One Copy of Existing Card";
-            this.addOneCopyInExistingCardToolStripMenuItem.Click += new System.EventHandler(this.addOneCopyInExistingCardToolStripMenuItem_Click);
             // 
             // Main
             // 

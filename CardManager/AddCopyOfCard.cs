@@ -27,12 +27,28 @@ namespace CardManager
         private void RefreshSetComboBox(object sender, EventArgs e)
         {
             this.cardSetDropdownCardTableAdapter.Fill(this.cardManagerDBDataSet.CardSetDropdownCard, collectionComboBox.Text);
-            //setComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
         private void RefreshCardComboBox(object sender, EventArgs e)
         {
             this.cardDropDownTableAdapter.Fill(this.cardManagerDBDataSet.CardDropDown, setComboBox.Text);
+        }
+
+        private void AddCards_Click(object sender, EventArgs e)
+        {
+            string msg = "";
+            this.addCardCopyTableAdapter.Fill(this.cardManagerDBDataSet.AddCardCopy, collectionComboBox.Text, setComboBox.Text, cardComboBox.Text, (int?)normalNumeric.Value, (int?)follieNumeric.Value, ref msg);
+            if (msg == "Fail")
+                msg = "Failed to update card.";
+            else if (msg == "Success")
+                msg = "Card updated successfully.";
+            label8.Text = msg;
+            label8.Visible = true;
+        }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

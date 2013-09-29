@@ -22,27 +22,40 @@ namespace CardManager
             InitializeComponent();
         }
 
-        private void d_button1_Click(object sender, EventArgs e)
+        private void DeleteCard_Load(object sender, EventArgs e)
         {
-            if((d_textBox1.Text == "") && (d_textBox2.Text == ""))
-            {
-                Main.errorMsgDeleteCard = "You must give a value for the name or the number of the card.";
-                DeleteCardError DeleteCardErrorForm = new DeleteCardError();
-                DeleteCardErrorForm.Show();
-            }
-            else
-            {
-                if(d_comboBox1.Text == "")
-                {
-                    Main.errorMsgDeleteCard = "Please give a value for the block of the card to be deleted.";
-                    DeleteCardError DeleteCardErrorForm = new DeleteCardError();
-                    DeleteCardErrorForm.Show();
-                }
-                else
-                {
-                    ;
-                }
-            }
+            this.collectionDropdownTableAdapter.Fill(this.cardManagerDBDataSet.CollectionDropdown, "D");
+            collectionComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            setComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            cardComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void setComboBoxRefresh(object sender, EventArgs e)
+        {
+            this.cardSetDropdownCardTableAdapter.Fill(this.cardManagerDBDataSet.CardSetDropdownCard, collectionComboBox.Text);
+        }
+
+        private void cardComboBoxRefresh(object sender, EventArgs e)
+        {
+            this.cardDropDownTableAdapter.Fill(this.cardManagerDBDataSet.CardDropDown, setComboBox.Text);
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            string msg = "";
+            this.cardManagerDeleteTableAdapter.Fill(this.cardManagerDBDataSet.CardManagerDelete, collectionComboBox.Text, setComboBox.Text, cardComboBox.Text, ref msg);
+            if (msg == "Success")
+                msg = "The card was deleted successfully.";
+            else if (msg == "Fail")
+                msg = "Failed to delete card.";
+
+            label4.Text = msg;
+            label4.Visible = true;
+        }
+
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

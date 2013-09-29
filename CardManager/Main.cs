@@ -95,5 +95,13 @@ namespace CardManager
             AddCopyOfCardForm.WindowState = FormWindowState.Maximized;
             AddCopyOfCardForm.Show();
         }
+
+        private void deleteCardsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DeleteCard DeleteCardForm = new DeleteCard();
+            DeleteCardForm.MdiParent = this;
+            DeleteCardForm.WindowState = FormWindowState.Maximized;
+            DeleteCardForm.Show();
+        }
     }
 }

@@ -39,24 +39,28 @@
             this.cardSetDropdownCardBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.cardComboBox = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.cardDropDownBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.normalNumeric = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.follieNumeric = new System.Windows.Forms.NumericUpDown();
             this.AddCards = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.collectionDropdownTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CollectionDropdownTableAdapter();
             this.tableAdapterManager = new CardManager.CardManagerDBDataSetTableAdapters.TableAdapterManager();
             this.cardSetDropdownCardTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CardSetDropdownCardTableAdapter();
-            this.cardDropDownBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cardDropDownTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CardDropDownTableAdapter();
+            this.label8 = new System.Windows.Forms.Label();
+            this.addCardCopyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.addCardCopyTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.AddCardCopyTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardSetDropdownCardBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDropDownBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.normalNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.follieNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addCardCopyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -150,13 +154,23 @@
             this.cardComboBox.TabIndex = 6;
             this.cardComboBox.ValueMember = "Name";
             // 
-            // numericUpDown1
+            // cardDropDownBindingSource
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.numericUpDown1.Location = new System.Drawing.Point(138, 282);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(66, 24);
-            this.numericUpDown1.TabIndex = 7;
+            this.cardDropDownBindingSource.DataMember = "CardDropDown";
+            this.cardDropDownBindingSource.DataSource = this.cardManagerDBDataSet;
+            // 
+            // normalNumeric
+            // 
+            this.normalNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.normalNumeric.Location = new System.Drawing.Point(138, 282);
+            this.normalNumeric.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.normalNumeric.Name = "normalNumeric";
+            this.normalNumeric.Size = new System.Drawing.Size(66, 24);
+            this.normalNumeric.TabIndex = 7;
             // 
             // label5
             // 
@@ -178,31 +192,40 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "Follie:";
             // 
-            // numericUpDown2
+            // follieNumeric
             // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.numericUpDown2.Location = new System.Drawing.Point(357, 282);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(66, 24);
-            this.numericUpDown2.TabIndex = 10;
+            this.follieNumeric.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.follieNumeric.Location = new System.Drawing.Point(357, 282);
+            this.follieNumeric.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.follieNumeric.Name = "follieNumeric";
+            this.follieNumeric.Size = new System.Drawing.Size(66, 24);
+            this.follieNumeric.TabIndex = 10;
             // 
             // AddCards
             // 
-            this.AddCards.Location = new System.Drawing.Point(104, 337);
+            this.AddCards.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.AddCards.Location = new System.Drawing.Point(84, 377);
             this.AddCards.Name = "AddCards";
-            this.AddCards.Size = new System.Drawing.Size(75, 23);
+            this.AddCards.Size = new System.Drawing.Size(95, 28);
             this.AddCards.TabIndex = 11;
             this.AddCards.Text = "Add Cards";
             this.AddCards.UseVisualStyleBackColor = true;
+            this.AddCards.Click += new System.EventHandler(this.AddCards_Click);
             // 
             // Cancel
             // 
-            this.Cancel.Location = new System.Drawing.Point(261, 337);
+            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.Cancel.Location = new System.Drawing.Point(261, 377);
             this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(75, 23);
+            this.Cancel.Size = new System.Drawing.Size(75, 28);
             this.Cancel.TabIndex = 12;
             this.Cancel.Text = "Cancel";
             this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // label7
             // 
@@ -220,6 +243,7 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.AddCardCopyTableAdapter = null;
             this.tableAdapterManager.AddNewCollectionTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CardManagerInsertTableAdapter = null;
@@ -237,27 +261,44 @@
             // 
             this.cardSetDropdownCardTableAdapter.ClearBeforeFill = true;
             // 
-            // cardDropDownBindingSource
-            // 
-            this.cardDropDownBindingSource.DataMember = "CardDropDown";
-            this.cardDropDownBindingSource.DataSource = this.cardManagerDBDataSet;
-            // 
             // cardDropDownTableAdapter
             // 
             this.cardDropDownTableAdapter.ClearBeforeFill = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(56, 343);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 18);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "label8";
+            this.label8.Visible = false;
+            // 
+            // addCardCopyBindingSource
+            // 
+            this.addCardCopyBindingSource.DataMember = "AddCardCopy";
+            this.addCardCopyBindingSource.DataSource = this.cardManagerDBDataSet;
+            // 
+            // addCardCopyTableAdapter
+            // 
+            this.addCardCopyTableAdapter.ClearBeforeFill = true;
             // 
             // AddCopyOfCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 713);
+            this.ClientSize = new System.Drawing.Size(458, 495);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.AddCards);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.follieNumeric);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.normalNumeric);
             this.Controls.Add(this.cardComboBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.setComboBox);
@@ -271,9 +312,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardSetDropdownCardBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardDropDownBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.normalNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.follieNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.addCardCopyBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -288,10 +330,10 @@
         private System.Windows.Forms.ComboBox setComboBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cardComboBox;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown normalNumeric;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown follieNumeric;
         private System.Windows.Forms.Button AddCards;
         private System.Windows.Forms.Button Cancel;
         private System.Windows.Forms.Label label7;
@@ -303,5 +345,8 @@
         private CardManagerDBDataSetTableAdapters.CardSetDropdownCardTableAdapter cardSetDropdownCardTableAdapter;
         private System.Windows.Forms.BindingSource cardDropDownBindingSource;
         private CardManagerDBDataSetTableAdapters.CardDropDownTableAdapter cardDropDownTableAdapter;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.BindingSource addCardCopyBindingSource;
+        private CardManagerDBDataSetTableAdapters.AddCardCopyTableAdapter addCardCopyTableAdapter;
     }
 }

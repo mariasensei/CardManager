@@ -196,7 +196,6 @@ C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManage
 C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.CardSets.resources
 C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.Collections.resources
 C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCard.resources
-C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardError.resources
 C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCardSet.resources
 C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.DeleteCollection.resources
 C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.Main.resources

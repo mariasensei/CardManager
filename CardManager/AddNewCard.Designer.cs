@@ -132,6 +132,7 @@
             // 
             // tableAdapterManager
             // 
+            this.tableAdapterManager.AddCardCopyTableAdapter = null;
             this.tableAdapterManager.AddNewCollectionTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CardManagerInsertTableAdapter = null;
@@ -390,6 +391,11 @@
             this.collectorNumeric.BackColor = System.Drawing.SystemColors.InfoText;
             this.collectorNumeric.ForeColor = System.Drawing.SystemColors.MenuBar;
             this.collectorNumeric.Location = new System.Drawing.Point(256, 409);
+            this.collectorNumeric.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.collectorNumeric.Name = "collectorNumeric";
             this.collectorNumeric.Size = new System.Drawing.Size(51, 24);
             this.collectorNumeric.TabIndex = 22;
