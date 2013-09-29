@@ -95,9 +95,11 @@
             // 
             this.tableAdapterManager.AddNewCollectionTableAdapter = null;
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CardManagerInsertTableAdapter = null;
             this.tableAdapterManager.CardSetManagerInsertTableAdapter = null;
             this.tableAdapterManager.CollectionManagerSelectTableAdapter = null;
             this.tableAdapterManager.CollectionManagerTableAdapter = null;
+            this.tableAdapterManager.DeleteCardSetTableAdapter = null;
             this.tableAdapterManager.DeleteCollectionTableAdapter = this.deleteCollectionTableAdapter;
             this.tableAdapterManager.SpecifiedCardSetSelectTableAdapter = null;
             this.tableAdapterManager.UpdateCollectionTableAdapter = null;
@@ -116,6 +118,8 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DataSource = this.collectionDropdownBindingSource;
+            this.comboBox1.DisplayMember = "Name";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(85, 62);
             this.comboBox1.Name = "comboBox1";

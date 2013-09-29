@@ -32,8 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.collectionComboBox = new System.Windows.Forms.ComboBox();
+            this.collectionDropdownBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cardManagerDBDataSet = new CardManager.CardManagerDBDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.setComboBox = new System.Windows.Forms.ComboBox();
+            this.cardSetDropdownCardBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.cardComboBox = new System.Windows.Forms.ComboBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -43,14 +46,17 @@
             this.AddCards = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.cardManagerDBDataSet = new CardManager.CardManagerDBDataSet();
-            this.collectionDropdownBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.collectionDropdownTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CollectionDropdownTableAdapter();
             this.tableAdapterManager = new CardManager.CardManagerDBDataSetTableAdapters.TableAdapterManager();
+            this.cardSetDropdownCardTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CardSetDropdownCardTableAdapter();
+            this.cardDropDownBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cardDropDownTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CardDropDownTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardSetDropdownCardBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardDropDownBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -75,12 +81,25 @@
             // 
             // collectionComboBox
             // 
+            this.collectionComboBox.DataSource = this.collectionDropdownBindingSource;
+            this.collectionComboBox.DisplayMember = "Name";
             this.collectionComboBox.FormattingEnabled = true;
             this.collectionComboBox.Location = new System.Drawing.Point(261, 61);
             this.collectionComboBox.Name = "collectionComboBox";
             this.collectionComboBox.Size = new System.Drawing.Size(121, 21);
             this.collectionComboBox.TabIndex = 2;
             this.collectionComboBox.ValueMember = "Name";
+            this.collectionComboBox.SelectedValueChanged += new System.EventHandler(this.RefreshSetComboBox);
+            // 
+            // collectionDropdownBindingSource
+            // 
+            this.collectionDropdownBindingSource.DataMember = "CollectionDropdown";
+            this.collectionDropdownBindingSource.DataSource = this.cardManagerDBDataSet;
+            // 
+            // cardManagerDBDataSet
+            // 
+            this.cardManagerDBDataSet.DataSetName = "CardManagerDBDataSet";
+            this.cardManagerDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label3
             // 
@@ -94,11 +113,21 @@
             // 
             // setComboBox
             // 
+            this.setComboBox.DataSource = this.cardSetDropdownCardBindingSource;
+            this.setComboBox.DisplayMember = "Name";
             this.setComboBox.FormattingEnabled = true;
             this.setComboBox.Location = new System.Drawing.Point(261, 125);
             this.setComboBox.Name = "setComboBox";
             this.setComboBox.Size = new System.Drawing.Size(121, 21);
             this.setComboBox.TabIndex = 4;
+            this.setComboBox.ValueMember = "Name";
+            this.setComboBox.SelectedValueChanged += new System.EventHandler(this.RefreshCardComboBox);
+            this.setComboBox.VisibleChanged += new System.EventHandler(this.RefreshCardComboBox);
+            // 
+            // cardSetDropdownCardBindingSource
+            // 
+            this.cardSetDropdownCardBindingSource.DataMember = "CardSetDropdownCard";
+            this.cardSetDropdownCardBindingSource.DataSource = this.cardManagerDBDataSet;
             // 
             // label4
             // 
@@ -112,11 +141,14 @@
             // 
             // cardComboBox
             // 
+            this.cardComboBox.DataSource = this.cardDropDownBindingSource;
+            this.cardComboBox.DisplayMember = "Name";
             this.cardComboBox.FormattingEnabled = true;
             this.cardComboBox.Location = new System.Drawing.Point(261, 180);
             this.cardComboBox.Name = "cardComboBox";
             this.cardComboBox.Size = new System.Drawing.Size(121, 21);
             this.cardComboBox.TabIndex = 6;
+            this.cardComboBox.ValueMember = "Name";
             // 
             // numericUpDown1
             // 
@@ -182,16 +214,6 @@
             this.label7.TabIndex = 13;
             this.label7.Text = "How many cards do you want to add?";
             // 
-            // cardManagerDBDataSet
-            // 
-            this.cardManagerDBDataSet.DataSetName = "CardManagerDBDataSet";
-            this.cardManagerDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // collectionDropdownBindingSource
-            // 
-            this.collectionDropdownBindingSource.DataMember = "CollectionDropdown";
-            this.collectionDropdownBindingSource.DataSource = this.cardManagerDBDataSet;
-            // 
             // collectionDropdownTableAdapter
             // 
             this.collectionDropdownTableAdapter.ClearBeforeFill = true;
@@ -210,6 +232,19 @@
             this.tableAdapterManager.SpecifiedCardSetSelectTableAdapter = null;
             this.tableAdapterManager.UpdateCollectionTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = CardManager.CardManagerDBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // cardSetDropdownCardTableAdapter
+            // 
+            this.cardSetDropdownCardTableAdapter.ClearBeforeFill = true;
+            // 
+            // cardDropDownBindingSource
+            // 
+            this.cardDropDownBindingSource.DataMember = "CardDropDown";
+            this.cardDropDownBindingSource.DataSource = this.cardManagerDBDataSet;
+            // 
+            // cardDropDownTableAdapter
+            // 
+            this.cardDropDownTableAdapter.ClearBeforeFill = true;
             // 
             // AddCopyOfCard
             // 
@@ -233,10 +268,12 @@
             this.Name = "AddCopyOfCard";
             this.Text = "AddCopyOfCard";
             this.Load += new System.EventHandler(this.AddCopyOfCard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardSetDropdownCardBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardDropDownBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -262,5 +299,9 @@
         private System.Windows.Forms.BindingSource collectionDropdownBindingSource;
         private CardManagerDBDataSetTableAdapters.CollectionDropdownTableAdapter collectionDropdownTableAdapter;
         private CardManagerDBDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.BindingSource cardSetDropdownCardBindingSource;
+        private CardManagerDBDataSetTableAdapters.CardSetDropdownCardTableAdapter cardSetDropdownCardTableAdapter;
+        private System.Windows.Forms.BindingSource cardDropDownBindingSource;
+        private CardManagerDBDataSetTableAdapters.CardDropDownTableAdapter cardDropDownTableAdapter;
     }
 }

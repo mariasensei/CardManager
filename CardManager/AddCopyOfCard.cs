@@ -20,6 +20,19 @@ namespace CardManager
         {
             this.collectionDropdownTableAdapter.Fill(this.cardManagerDBDataSet.CollectionDropdown, "D");
             collectionComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            setComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+            cardComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void RefreshSetComboBox(object sender, EventArgs e)
+        {
+            this.cardSetDropdownCardTableAdapter.Fill(this.cardManagerDBDataSet.CardSetDropdownCard, collectionComboBox.Text);
+            //setComboBox.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void RefreshCardComboBox(object sender, EventArgs e)
+        {
+            this.cardDropDownTableAdapter.Fill(this.cardManagerDBDataSet.CardDropDown, setComboBox.Text);
         }
     }
 }
