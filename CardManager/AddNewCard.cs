@@ -62,7 +62,7 @@ namespace CardManager
             else
             {
 
-                this.cardManagerInsertTableAdapter.Fill(this.cardManagerDBDataSet.CardManagerInsert, (int?)collectorNumeric.Value, cardNameTextBox.Text, (int?)normalAmountNumeric.Value,
+                this.cardManagerInsertTableAdapter.Fill(this.cardManagerDBDataSet.CardManagerInsert, "I", (int?)collectorNumeric.Value, cardNameTextBox.Text, (int?)normalAmountNumeric.Value,
                     languageComboBox.Text, rarityComboBox.Text, comboBox2.Text, cardDescription.Text, cardTypeComboBox.Text,
                     subtypeTextbox.Text, colorComboBox.Text, color2ComboBox.Text, color3ComboBox.Text, (int?)follieAmountNumeric.Value, ref msg);
 
@@ -75,13 +75,21 @@ namespace CardManager
                     if (msgReply == DialogResult.No)
                         this.Close();
                     else
-                        ;
-                        //here you call procedure to add 1 more in the card.
+                    {
+                        this.cardManagerInsertTableAdapter.Fill(this.cardManagerDBDataSet.CardManagerInsert, "A", (int?)collectorNumeric.Value, cardNameTextBox.Text, (int?)normalAmountNumeric.Value,
+                            languageComboBox.Text, rarityComboBox.Text, comboBox2.Text, cardDescription.Text, cardTypeComboBox.Text,
+                            subtypeTextbox.Text, colorComboBox.Text, color2ComboBox.Text, color3ComboBox.Text, (int?)follieAmountNumeric.Value, ref msg);
+
+                        if (msg == "Success")
+                            msg = "Card added successfully.";
+                    }
                 }
                 else if (msg == "Fail4")
                     msg = "Card Number is out of range.";
                 else if (msg == "Fail3")
                     msg = "CardSet with that name does not exist.";
+                else if (msg == "Success")
+                    msg = "Card added successfully.";
 
                 msgLabel.Text = msg;
                 msgLabel.Visible = true;

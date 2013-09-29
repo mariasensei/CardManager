@@ -10303,6 +10303,7 @@ namespace CardManager.CardManagerDBDataSetTableAdapters {
             this._adapter.InsertCommand.CommandText = "dbo.CardManagerInsert";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.StoredProcedure;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Operator", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Number", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amount", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -10335,6 +10336,7 @@ namespace CardManager.CardManagerDBDataSetTableAdapters {
             this._commandCollection[0].CommandText = "dbo.CardManagerInsert";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Operator", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Number", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amount", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -10355,102 +10357,124 @@ namespace CardManager.CardManagerDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CardManagerDBDataSet.CardManagerInsertDataTable dataTable, global::System.Nullable<int> Number, string Name, global::System.Nullable<int> Amount, string Language, string Rarity, string SetName, string Description, string Type, string SubType, string Color1, string Color2, string Color3, global::System.Nullable<int> FAmount, ref string ErrorMessage) {
+        public virtual int Fill(
+                    CardManagerDBDataSet.CardManagerInsertDataTable dataTable, 
+                    string Operator, 
+                    global::System.Nullable<int> Number, 
+                    string Name, 
+                    global::System.Nullable<int> Amount, 
+                    string Language, 
+                    string Rarity, 
+                    string SetName, 
+                    string Description, 
+                    string Type, 
+                    string SubType, 
+                    string Color1, 
+                    string Color2, 
+                    string Color3, 
+                    global::System.Nullable<int> FAmount, 
+                    ref string ErrorMessage) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((Number.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Number.Value));
-            }
-            else {
+            if ((Operator == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Name == null)) {
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Operator));
+            }
+            if ((Number.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(Number.Value));
+            }
+            else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Name));
-            }
-            if ((Amount.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((int)(Amount.Value));
-            }
-            else {
+            if ((Name == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Language == null)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(Name));
+            }
+            if ((Amount.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((int)(Amount.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(Language));
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Rarity == null)) {
+            if ((Language == null)) {
                 this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(Rarity));
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(Language));
             }
-            if ((SetName == null)) {
+            if ((Rarity == null)) {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[6].Value = ((string)(SetName));
+                this.Adapter.SelectCommand.Parameters[6].Value = ((string)(Rarity));
             }
-            if ((Description == null)) {
+            if ((SetName == null)) {
                 this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[7].Value = ((string)(Description));
+                this.Adapter.SelectCommand.Parameters[7].Value = ((string)(SetName));
             }
-            if ((Type == null)) {
+            if ((Description == null)) {
                 this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(Type));
+                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(Description));
             }
-            if ((SubType == null)) {
+            if ((Type == null)) {
                 this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[9].Value = ((string)(SubType));
+                this.Adapter.SelectCommand.Parameters[9].Value = ((string)(Type));
             }
-            if ((Color1 == null)) {
+            if ((SubType == null)) {
                 this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[10].Value = ((string)(Color1));
+                this.Adapter.SelectCommand.Parameters[10].Value = ((string)(SubType));
             }
-            if ((Color2 == null)) {
+            if ((Color1 == null)) {
                 this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[11].Value = ((string)(Color2));
+                this.Adapter.SelectCommand.Parameters[11].Value = ((string)(Color1));
             }
-            if ((Color3 == null)) {
+            if ((Color2 == null)) {
                 this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[12].Value = ((string)(Color3));
+                this.Adapter.SelectCommand.Parameters[12].Value = ((string)(Color2));
             }
-            if ((FAmount.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(FAmount.Value));
-            }
-            else {
+            if ((Color3 == null)) {
                 this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((ErrorMessage == null)) {
-                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((string)(Color3));
+            }
+            if ((FAmount.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[14].Value = ((int)(FAmount.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[14].Value = ((string)(ErrorMessage));
+                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((ErrorMessage == null)) {
+                this.Adapter.SelectCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[15].Value = ((string)(ErrorMessage));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
             int returnValue = this.Adapter.Fill(dataTable);
-            if (((this.Adapter.SelectCommand.Parameters[14].Value == null) 
-                        || (this.Adapter.SelectCommand.Parameters[14].Value.GetType() == typeof(global::System.DBNull)))) {
+            if (((this.Adapter.SelectCommand.Parameters[15].Value == null) 
+                        || (this.Adapter.SelectCommand.Parameters[15].Value.GetType() == typeof(global::System.DBNull)))) {
                 ErrorMessage = null;
             }
             else {
-                ErrorMessage = ((string)(this.Adapter.SelectCommand.Parameters[14].Value));
+                ErrorMessage = ((string)(this.Adapter.SelectCommand.Parameters[15].Value));
             }
             return returnValue;
         }
@@ -10459,100 +10483,106 @@ namespace CardManager.CardManagerDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CardManagerDBDataSet.CardManagerInsertDataTable GetData(global::System.Nullable<int> Number, string Name, global::System.Nullable<int> Amount, string Language, string Rarity, string SetName, string Description, string Type, string SubType, string Color1, string Color2, string Color3, global::System.Nullable<int> FAmount, ref string ErrorMessage) {
+        public virtual CardManagerDBDataSet.CardManagerInsertDataTable GetData(string Operator, global::System.Nullable<int> Number, string Name, global::System.Nullable<int> Amount, string Language, string Rarity, string SetName, string Description, string Type, string SubType, string Color1, string Color2, string Color3, global::System.Nullable<int> FAmount, ref string ErrorMessage) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            if ((Number.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Number.Value));
-            }
-            else {
+            if ((Operator == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Name == null)) {
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Operator));
+            }
+            if ((Number.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[2].Value = ((int)(Number.Value));
+            }
+            else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Name));
-            }
-            if ((Amount.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[3].Value = ((int)(Amount.Value));
-            }
-            else {
+            if ((Name == null)) {
                 this.Adapter.SelectCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Language == null)) {
-                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.SelectCommand.Parameters[3].Value = ((string)(Name));
+            }
+            if ((Amount.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[4].Value = ((int)(Amount.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[4].Value = ((string)(Language));
+                this.Adapter.SelectCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Rarity == null)) {
+            if ((Language == null)) {
                 this.Adapter.SelectCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(Rarity));
+                this.Adapter.SelectCommand.Parameters[5].Value = ((string)(Language));
             }
-            if ((SetName == null)) {
+            if ((Rarity == null)) {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[6].Value = ((string)(SetName));
+                this.Adapter.SelectCommand.Parameters[6].Value = ((string)(Rarity));
             }
-            if ((Description == null)) {
+            if ((SetName == null)) {
                 this.Adapter.SelectCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[7].Value = ((string)(Description));
+                this.Adapter.SelectCommand.Parameters[7].Value = ((string)(SetName));
             }
-            if ((Type == null)) {
+            if ((Description == null)) {
                 this.Adapter.SelectCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(Type));
+                this.Adapter.SelectCommand.Parameters[8].Value = ((string)(Description));
             }
-            if ((SubType == null)) {
+            if ((Type == null)) {
                 this.Adapter.SelectCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[9].Value = ((string)(SubType));
+                this.Adapter.SelectCommand.Parameters[9].Value = ((string)(Type));
             }
-            if ((Color1 == null)) {
+            if ((SubType == null)) {
                 this.Adapter.SelectCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[10].Value = ((string)(Color1));
+                this.Adapter.SelectCommand.Parameters[10].Value = ((string)(SubType));
             }
-            if ((Color2 == null)) {
+            if ((Color1 == null)) {
                 this.Adapter.SelectCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[11].Value = ((string)(Color2));
+                this.Adapter.SelectCommand.Parameters[11].Value = ((string)(Color1));
             }
-            if ((Color3 == null)) {
+            if ((Color2 == null)) {
                 this.Adapter.SelectCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[12].Value = ((string)(Color3));
+                this.Adapter.SelectCommand.Parameters[12].Value = ((string)(Color2));
             }
-            if ((FAmount.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[13].Value = ((int)(FAmount.Value));
-            }
-            else {
+            if ((Color3 == null)) {
                 this.Adapter.SelectCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((ErrorMessage == null)) {
-                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.SelectCommand.Parameters[13].Value = ((string)(Color3));
+            }
+            if ((FAmount.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[14].Value = ((int)(FAmount.Value));
             }
             else {
-                this.Adapter.SelectCommand.Parameters[14].Value = ((string)(ErrorMessage));
+                this.Adapter.SelectCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((ErrorMessage == null)) {
+                this.Adapter.SelectCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[15].Value = ((string)(ErrorMessage));
             }
             CardManagerDBDataSet.CardManagerInsertDataTable dataTable = new CardManagerDBDataSet.CardManagerInsertDataTable();
             this.Adapter.Fill(dataTable);
-            if (((this.Adapter.SelectCommand.Parameters[14].Value == null) 
-                        || (this.Adapter.SelectCommand.Parameters[14].Value.GetType() == typeof(global::System.DBNull)))) {
+            if (((this.Adapter.SelectCommand.Parameters[15].Value == null) 
+                        || (this.Adapter.SelectCommand.Parameters[15].Value.GetType() == typeof(global::System.DBNull)))) {
                 ErrorMessage = null;
             }
             else {
-                ErrorMessage = ((string)(this.Adapter.SelectCommand.Parameters[14].Value));
+                ErrorMessage = ((string)(this.Adapter.SelectCommand.Parameters[15].Value));
             }
             return dataTable;
         }
@@ -10590,90 +10620,96 @@ namespace CardManager.CardManagerDBDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> Number, string Name, global::System.Nullable<int> Amount, string Language, string Rarity, string SetName, string Description, string Type, string SubType, string Color1, string Color2, string Color3, global::System.Nullable<int> FAmount, ref string ErrorMessage) {
-            if ((Number.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Number.Value));
-            }
-            else {
+        public virtual int Insert(string Operator, global::System.Nullable<int> Number, string Name, global::System.Nullable<int> Amount, string Language, string Rarity, string SetName, string Description, string Type, string SubType, string Color1, string Color2, string Color3, global::System.Nullable<int> FAmount, ref string ErrorMessage) {
+            if ((Operator == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Name == null)) {
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Operator));
+            }
+            if ((Number.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Number.Value));
+            }
+            else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Name));
-            }
-            if ((Amount.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Amount.Value));
-            }
-            else {
+            if ((Name == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Language == null)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(Name));
+            }
+            if ((Amount.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Amount.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(Language));
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Rarity == null)) {
+            if ((Language == null)) {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Rarity));
+                this.Adapter.InsertCommand.Parameters[5].Value = ((string)(Language));
             }
-            if ((SetName == null)) {
+            if ((Rarity == null)) {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(SetName));
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(Rarity));
             }
-            if ((Description == null)) {
+            if ((SetName == null)) {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(Description));
+                this.Adapter.InsertCommand.Parameters[7].Value = ((string)(SetName));
             }
-            if ((Type == null)) {
+            if ((Description == null)) {
                 this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Type));
+                this.Adapter.InsertCommand.Parameters[8].Value = ((string)(Description));
             }
-            if ((SubType == null)) {
+            if ((Type == null)) {
                 this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(SubType));
+                this.Adapter.InsertCommand.Parameters[9].Value = ((string)(Type));
             }
-            if ((Color1 == null)) {
+            if ((SubType == null)) {
                 this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(Color1));
+                this.Adapter.InsertCommand.Parameters[10].Value = ((string)(SubType));
             }
-            if ((Color2 == null)) {
+            if ((Color1 == null)) {
                 this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Color2));
+                this.Adapter.InsertCommand.Parameters[11].Value = ((string)(Color1));
             }
-            if ((Color3 == null)) {
+            if ((Color2 == null)) {
                 this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Color3));
+                this.Adapter.InsertCommand.Parameters[12].Value = ((string)(Color2));
             }
-            if ((FAmount.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[13].Value = ((int)(FAmount.Value));
-            }
-            else {
+            if ((Color3 == null)) {
                 this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((ErrorMessage == null)) {
-                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((string)(Color3));
+            }
+            if ((FAmount.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((int)(FAmount.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[14].Value = ((string)(ErrorMessage));
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((ErrorMessage == null)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((string)(ErrorMessage));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -10682,12 +10718,12 @@ namespace CardManager.CardManagerDBDataSetTableAdapters {
             }
             try {
                 int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                if (((this.Adapter.InsertCommand.Parameters[14].Value == null) 
-                            || (this.Adapter.InsertCommand.Parameters[14].Value.GetType() == typeof(global::System.DBNull)))) {
+                if (((this.Adapter.InsertCommand.Parameters[15].Value == null) 
+                            || (this.Adapter.InsertCommand.Parameters[15].Value.GetType() == typeof(global::System.DBNull)))) {
                     ErrorMessage = null;
                 }
                 else {
-                    ErrorMessage = ((string)(this.Adapter.InsertCommand.Parameters[14].Value));
+                    ErrorMessage = ((string)(this.Adapter.InsertCommand.Parameters[15].Value));
                 }
                 return returnValue;
             }

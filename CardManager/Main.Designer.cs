@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.m_button1 = new System.Windows.Forms.Button();
-            this.m_button2 = new System.Windows.Forms.Button();
-            this.m_button3 = new System.Windows.Forms.Button();
-            this.m_button5 = new System.Windows.Forms.Button();
-            this.m_button6 = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.collectionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.insertNewCollectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,62 +43,9 @@
             this.viewUpdateCardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteCardsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addOneCopyInExistingCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // m_button1
-            // 
-            this.m_button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.m_button1.Location = new System.Drawing.Point(0, 474);
-            this.m_button1.Name = "m_button1";
-            this.m_button1.Size = new System.Drawing.Size(118, 26);
-            this.m_button1.TabIndex = 2;
-            this.m_button1.Text = "Add a card to your list";
-            this.m_button1.UseVisualStyleBackColor = true;
-            this.m_button1.Click += new System.EventHandler(this.m_button1_Click);
-            // 
-            // m_button2
-            // 
-            this.m_button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.m_button2.Location = new System.Drawing.Point(235, 474);
-            this.m_button2.Name = "m_button2";
-            this.m_button2.Size = new System.Drawing.Size(140, 26);
-            this.m_button2.TabIndex = 3;
-            this.m_button2.Text = "Delete a card from your list";
-            this.m_button2.UseVisualStyleBackColor = true;
-            this.m_button2.Click += new System.EventHandler(this.m_button2_Click);
-            // 
-            // m_button3
-            // 
-            this.m_button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.m_button3.Location = new System.Drawing.Point(381, 473);
-            this.m_button3.Name = "m_button3";
-            this.m_button3.Size = new System.Drawing.Size(146, 27);
-            this.m_button3.TabIndex = 4;
-            this.m_button3.Text = "Display the cards in your list";
-            this.m_button3.UseVisualStyleBackColor = true;
-            // 
-            // m_button5
-            // 
-            this.m_button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.m_button5.Location = new System.Drawing.Point(533, 472);
-            this.m_button5.Name = "m_button5";
-            this.m_button5.Size = new System.Drawing.Size(108, 28);
-            this.m_button5.TabIndex = 6;
-            this.m_button5.Text = "Manage Collections";
-            this.m_button5.UseVisualStyleBackColor = true;
-            this.m_button5.Click += new System.EventHandler(this.m_button5_Click);
-            // 
-            // m_button6
-            // 
-            this.m_button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.m_button6.Location = new System.Drawing.Point(124, 474);
-            this.m_button6.Name = "m_button6";
-            this.m_button6.Size = new System.Drawing.Size(105, 27);
-            this.m_button6.TabIndex = 7;
-            this.m_button6.Text = "Manage Card Sets";
-            this.m_button6.UseVisualStyleBackColor = true;
-            this.m_button6.Click += new System.EventHandler(this.m_button6_Click);
             // 
             // menuStrip1
             // 
@@ -186,7 +128,8 @@
             this.cardsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.insertNewCardToolStripMenuItem,
             this.viewUpdateCardsToolStripMenuItem,
-            this.deleteCardsToolStripMenuItem});
+            this.deleteCardsToolStripMenuItem,
+            this.addOneCopyInExistingCardToolStripMenuItem});
             this.cardsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.cardsToolStripMenuItem.Name = "cardsToolStripMenuItem";
             this.cardsToolStripMenuItem.Size = new System.Drawing.Size(59, 23);
@@ -195,21 +138,21 @@
             // insertNewCardToolStripMenuItem
             // 
             this.insertNewCardToolStripMenuItem.Name = "insertNewCardToolStripMenuItem";
-            this.insertNewCardToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
+            this.insertNewCardToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
             this.insertNewCardToolStripMenuItem.Text = "Insert New Card";
             this.insertNewCardToolStripMenuItem.Click += new System.EventHandler(this.insertNewCardToolStripMenuItem_Click);
             // 
             // viewUpdateCardsToolStripMenuItem
             // 
             this.viewUpdateCardsToolStripMenuItem.Name = "viewUpdateCardsToolStripMenuItem";
-            this.viewUpdateCardsToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
+            this.viewUpdateCardsToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
             this.viewUpdateCardsToolStripMenuItem.Text = "View Update Cards";
             this.viewUpdateCardsToolStripMenuItem.Click += new System.EventHandler(this.viewUpdateCardsToolStripMenuItem_Click);
             // 
             // deleteCardsToolStripMenuItem
             // 
             this.deleteCardsToolStripMenuItem.Name = "deleteCardsToolStripMenuItem";
-            this.deleteCardsToolStripMenuItem.Size = new System.Drawing.Size(205, 24);
+            this.deleteCardsToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
             this.deleteCardsToolStripMenuItem.Text = "Delete Cards";
             // 
             // exitToolStripMenuItem
@@ -220,6 +163,13 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // addOneCopyInExistingCardToolStripMenuItem
+            // 
+            this.addOneCopyInExistingCardToolStripMenuItem.Name = "addOneCopyInExistingCardToolStripMenuItem";
+            this.addOneCopyInExistingCardToolStripMenuItem.Size = new System.Drawing.Size(285, 24);
+            this.addOneCopyInExistingCardToolStripMenuItem.Text = "Add One Copy of Existing Card";
+            this.addOneCopyInExistingCardToolStripMenuItem.Click += new System.EventHandler(this.addOneCopyInExistingCardToolStripMenuItem_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -228,11 +178,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(639, 502);
-            this.Controls.Add(this.m_button6);
-            this.Controls.Add(this.m_button5);
-            this.Controls.Add(this.m_button3);
-            this.Controls.Add(this.m_button2);
-            this.Controls.Add(this.m_button1);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -248,11 +193,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button m_button1;
-        private System.Windows.Forms.Button m_button2;
-        private System.Windows.Forms.Button m_button3;
-        private System.Windows.Forms.Button m_button5;
-        private System.Windows.Forms.Button m_button6;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem collectionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem insertNewCollectionToolStripMenuItem;
@@ -267,6 +207,7 @@
         private System.Windows.Forms.ToolStripMenuItem insertNewCardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewUpdateCardsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteCardsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addOneCopyInExistingCardToolStripMenuItem;
     }
 }
 

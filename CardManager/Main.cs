@@ -20,37 +20,6 @@ namespace CardManager
             InitializeComponent();
         }
 
-        private void m_button1_Click(object sender, EventArgs e)
-        {
-            AddCard AddCardForm = new AddCard();
-            AddCardForm.ShowDialog();
-        }
-
-        private void m_button2_Click(object sender, EventArgs e)
-        {
-            DeleteCard DeleteCardForm = new DeleteCard();
-            DeleteCardForm.ShowDialog();
-        }
-
-        private void m_button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void m_button5_Click(object sender, EventArgs e)
-        {
-            Collections CollectionsForm = new Collections();
-            CollectionsForm.MdiParent = this;
-            CollectionsForm.WindowState = FormWindowState.Maximized;
-            CollectionsForm.Show();
-        }
-
-        private void m_button6_Click(object sender, EventArgs e)
-        {
-            CardSets CardSetsForm = new CardSets();
-            CardSetsForm.ShowDialog();
-        }
-
         private void insertNewCollectionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AddNewCollection AddNewCollectionForm = new AddNewCollection();
@@ -117,6 +86,14 @@ namespace CardManager
             UpdateCardForm.MdiParent = this;
             UpdateCardForm.WindowState = FormWindowState.Maximized;
             UpdateCardForm.Show();
+        }
+
+        private void addOneCopyInExistingCardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCopyOfCard AddCopyOfCardForm = new AddCopyOfCard();
+            AddCopyOfCardForm.MdiParent = this;
+            AddCopyOfCardForm.WindowState = FormWindowState.Maximized;
+            AddCopyOfCardForm.Show();
         }
     }
 }

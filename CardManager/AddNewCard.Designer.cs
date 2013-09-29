@@ -70,6 +70,7 @@
             this.cardSetTotalAmountTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CardSetTotalAmountTableAdapter();
             this.cardManagerInsertBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cardManagerInsertTableAdapter = new CardManager.CardManagerDBDataSetTableAdapters.CardManagerInsertTableAdapter();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.collectionDropdownBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardManagerDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardSetDropdownCardBindingSource)).BeginInit();
@@ -158,9 +159,9 @@
             this.label1.Location = new System.Drawing.Point(24, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(86, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Collection:";
+            this.label1.Text = "*Collection:";
             // 
             // label2
             // 
@@ -172,9 +173,9 @@
             this.label2.Location = new System.Drawing.Point(24, 112);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
+            this.label2.Size = new System.Drawing.Size(78, 20);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Card Set:";
+            this.label2.Text = "*Card Set:";
             // 
             // label3
             // 
@@ -186,9 +187,9 @@
             this.label3.Location = new System.Drawing.Point(24, 168);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 20);
+            this.label3.Size = new System.Drawing.Size(60, 20);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Name:";
+            this.label3.Text = "*Name:";
             // 
             // cardNameTextBox
             // 
@@ -234,9 +235,9 @@
             this.label5.Location = new System.Drawing.Point(24, 367);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 20);
+            this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Language:";
+            this.label5.Text = "*Language:";
             // 
             // label6
             // 
@@ -246,9 +247,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label6.Location = new System.Drawing.Point(24, 270);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.Size = new System.Drawing.Size(58, 20);
             this.label6.TabIndex = 10;
-            this.label6.Text = "Rarity:";
+            this.label6.Text = "*Rarity:";
             // 
             // rarityComboBox
             // 
@@ -274,9 +275,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(24, 320);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
+            this.label7.Size = new System.Drawing.Size(57, 20);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Color:";
+            this.label7.Text = "*Color:";
             // 
             // colorComboBox
             // 
@@ -306,9 +307,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(24, 220);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 20);
+            this.label8.Size = new System.Drawing.Size(88, 20);
             this.label8.TabIndex = 14;
-            this.label8.Text = "Card Type:";
+            this.label8.Text = "*Card Type:";
             // 
             // cardTypeComboBox
             // 
@@ -338,9 +339,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Location = new System.Drawing.Point(24, 411);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(131, 20);
+            this.label9.Size = new System.Drawing.Size(137, 20);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Collector Number:";
+            this.label9.Text = "*Collector Number:";
             // 
             // normalAmountNumeric
             // 
@@ -527,13 +528,25 @@
             // 
             this.cardManagerInsertTableAdapter.ClearBeforeFill = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label12.Location = new System.Drawing.Point(36, 662);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(239, 18);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Fields with asterisk (*) are required.";
+            // 
             // AddNewCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(555, 694);
+            this.ClientSize = new System.Drawing.Size(566, 687);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.msgLabel);
             this.Controls.Add(this.color3ComboBox);
             this.Controls.Add(this.color2ComboBox);
@@ -624,5 +637,6 @@
         private CardManagerDBDataSetTableAdapters.CardSetTotalAmountTableAdapter cardSetTotalAmountTableAdapter;
         private System.Windows.Forms.BindingSource cardManagerInsertBindingSource;
         private CardManagerDBDataSetTableAdapters.CardManagerInsertTableAdapter cardManagerInsertTableAdapter;
+        private System.Windows.Forms.Label label12;
     }
 }

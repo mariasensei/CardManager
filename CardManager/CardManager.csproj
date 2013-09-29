@@ -62,29 +62,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddCard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddCard.Designer.cs">
-      <DependentUpon>AddCard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddCardConfirmed.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddCardConfirmed.Designer.cs">
-      <DependentUpon>AddCardConfirmed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddCardError.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddCardError.Designer.cs">
-      <DependentUpon>AddCardError.cs</DependentUpon>
-    </Compile>
     <Compile Include="AddCardSet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AddCardSet.Designer.cs">
       <DependentUpon>AddCardSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCopyOfCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCopyOfCard.Designer.cs">
+      <DependentUpon>AddCopyOfCard.cs</DependentUpon>
     </Compile>
     <Compile Include="AddNewCard.cs">
       <SubType>Form</SubType>
@@ -107,11 +95,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CardManagerDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CardManagerDBDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CardManagerDBDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="CardSets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,17 +106,6 @@
     </Compile>
     <Compile Include="Collections.Designer.cs">
       <DependentUpon>Collections.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConfirmDelete.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfirmDelete.Designer.cs">
-      <DependentUpon>ConfirmDelete.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="DeleteCard.cs">
       <SubType>Form</SubType>
@@ -158,12 +130,6 @@
     </Compile>
     <Compile Include="DeleteCollection.Designer.cs">
       <DependentUpon>DeleteCollection.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DeleteCollectionConfirm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeleteCollectionConfirm.Designer.cs">
-      <DependentUpon>DeleteCollectionConfirm.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -191,17 +157,11 @@
     <Compile Include="UpdateCollection.Designer.cs">
       <DependentUpon>UpdateCollection.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddCard.resx">
-      <DependentUpon>AddCard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddCardConfirmed.resx">
-      <DependentUpon>AddCardConfirmed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddCardError.resx">
-      <DependentUpon>AddCardError.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AddCardSet.resx">
       <DependentUpon>AddCardSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCopyOfCard.resx">
+      <DependentUpon>AddCopyOfCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AddNewCard.resx">
       <DependentUpon>AddNewCard.cs</DependentUpon>
@@ -215,9 +175,6 @@
     <EmbeddedResource Include="Collections.resx">
       <DependentUpon>Collections.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmDelete.resx">
-      <DependentUpon>ConfirmDelete.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DeleteCard.resx">
       <DependentUpon>DeleteCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteCollection.resx">
       <DependentUpon>DeleteCollection.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DeleteCollectionConfirm.resx">
-      <DependentUpon>DeleteCollectionConfirm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -265,28 +219,6 @@
     </None>
     <None Include="CardManagerDBDataSet.xss">
       <DependentUpon>CardManagerDBDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="CardManagerDBDataSet1.xsc">
-      <DependentUpon>CardManagerDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="CardManagerDBDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>CardManagerDBDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="CardManagerDBDataSet1.xss">
-      <DependentUpon>CardManagerDBDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsc">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="DataSet1.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSet1.xss">
-      <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
     <None Include="Properties\DataSources\Main.datasource" />
     <None Include="Properties\Settings.settings">
