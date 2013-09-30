@@ -145,6 +145,12 @@
     <Compile Include="UpdateCard.Designer.cs">
       <DependentUpon>UpdateCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpdateCardSets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCardSets.Designer.cs">
+      <DependentUpon>UpdateCardSets.cs</DependentUpon>
+    </Compile>
     <Compile Include="UpdateCollection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateCard.resx">
       <DependentUpon>UpdateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCardSets.resx">
+      <DependentUpon>UpdateCardSets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateCollection.resx">
       <DependentUpon>UpdateCollection.cs</DependentUpon>

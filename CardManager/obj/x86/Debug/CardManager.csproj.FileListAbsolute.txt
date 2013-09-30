@@ -229,3 +229,4 @@ C:\Users\nanao_000\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardMa
 C:\Users\nanao_000\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.UpdateCard.resources
 C:\Users\nanao_000\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.UpdateCollection.resources
 C:\Users\nanao_000\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.csproj.GenerateResource.Cache
+C:\Users\Maria\Documents\GitHub\CardManager\CardManager\obj\x86\Debug\CardManager.UpdateCardSets.resources
