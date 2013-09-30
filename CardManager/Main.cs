@@ -103,13 +103,5 @@ namespace CardManager
             DeleteCardForm.WindowState = FormWindowState.Maximized;
             DeleteCardForm.Show();
         }
-
-        private void updateViewSetsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            UpdateCardSets UpdateCardSetsForm = new UpdateCardSets();
-            UpdateCardSetsForm.MdiParent = this;
-            UpdateCardSetsForm.WindowState = FormWindowState.Maximized;
-            UpdateCardSetsForm.Show();
-        }
     }
 }

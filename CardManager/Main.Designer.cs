@@ -115,7 +115,6 @@
             this.updateViewSetsToolStripMenuItem.Name = "updateViewSetsToolStripMenuItem";
             this.updateViewSetsToolStripMenuItem.Size = new System.Drawing.Size(204, 24);
             this.updateViewSetsToolStripMenuItem.Text = "Update / View Sets";
-            this.updateViewSetsToolStripMenuItem.Click += new System.EventHandler(this.updateViewSetsToolStripMenuItem_Click);
             // 
             // deleteSetToolStripMenuItem
             // 
